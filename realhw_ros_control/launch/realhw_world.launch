@@ -1,0 +1,16 @@
+<launch>
+
+  <!-- Load the URDF into the ROS Parameter Server -->
+  <!--<param name="robot_description"
+	 command="$(find xacro)/xacro '$(find trobo_description)/urdf/trobo_sim.xacro'" />-->
+
+  <param name="robot_description" textfile="$(find trobo_description)/urdf/trobo.urdf"/>
+  
+  <!-- ros_control rrbot launch file -->
+  <include file="$(find realhw_control)/launch/realhw_control.launch" />
+
+  <!-- bring up rviz -->
+  <!--<node name ="rviz" pkg="rviz" type="rviz" args="-d $(find minimum_ros_control)/trobo_description/urdf" required="true" /> -->
+  <node name ="rviz" pkg="rviz" type="rviz" required="true"/>
+
+</launch>

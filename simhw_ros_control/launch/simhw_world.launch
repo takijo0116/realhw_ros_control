@@ -1,0 +1,14 @@
+<launch>
+  <!--<param name="robot_description"
+	 command="$(find xacro)/xacro '$(find trobo_description)/urdf/trobo_sim.xacro'" />-->
+
+  <param name="robot_description" textfile="$(find trobo_description)/urdf/trobo_sim.urdf"/>
+
+  <include file="$(find simhw_ros_control)/launch/simhw_control.launch" />
+   
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model mobilerobot"/>
+
+  <node name ="rviz" pkg="rviz" type="rviz" required="true"/>
+</launch>

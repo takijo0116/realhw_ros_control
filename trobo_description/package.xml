@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>trobo_description</name>
+  <version>0.0.0</version>
+  <description>The trobo_description package</description>
+
+  <maintainer email="takigami1w090318@gmail.com">Kota Takijo</maintainer>
+
+  <license>BSD</license>
+
+  <author email="davetcoleman@gmail.com">Dave Coleman</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>

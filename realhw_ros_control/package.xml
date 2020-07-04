@@ -1,0 +1,18 @@
+<package>
+  <name>realhw_ros_control</name>
+  <version>0.1.0</version>
+  <description>realhw_ros_control</description>
+  <maintainer email="takigami1w090318@gmail.com">Takijo Kota</maintainer>
+
+  <license>BSD</license>
+
+  <author email="takigami1w090318@gmail.com">Takijo Kota</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>trobo_description</run_depend>
+  <run_depend>realhw_control</run_depend> 
+
+  <export>
+  </export>
+</package>
